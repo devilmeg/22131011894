@@ -1,0 +1,101 @@
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f4f6f8, #e0eafc);
+  color: #2c3e50;
+}
+
+/* App container */
+.App {
+  text-align: center;
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Logo animation */
+.App-logo {
+  height: 120px;
+  margin-bottom: 1rem;
+  animation: App-logo-float 3s ease-in-out infinite;
+}
+
+/* Header styling */
+.App-header {
+  background: #ffffffcc;
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Header text */
+.App-header h1 {
+  color: #1a237e;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Button */
+button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #1976d2;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0d47a1;
+}
+
+/* Link */
+.App-link {
+  color: #1565c0;
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: 1rem;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.App-link:hover {
+  color: #0b3c91;
+  text-decoration: underline;
+}
+
+/* Logo floating animation */
+@keyframes App-logo-float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .App-header {
+    padding: 2rem;
+  }
+
+  .App-logo {
+    height: 80px;
+  }
+}

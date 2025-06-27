@@ -1,0 +1,151 @@
+/* === Reset & Base === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f0f0f;
+  color: #ffffff;
+  line-height: 1.6;
+  min-height: 100vh;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* === Neon Text & Headings === */
+h1, h2, h3 {
+  color: #00ffe7;
+  text-shadow: 0 0 5px #00ffe7, 0 0 10px #00ffe7;
+  margin-bottom: 1rem;
+}
+
+/* === Neon Links === */
+a {
+  color: #0ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #39f;
+  text-shadow: 0 0 5px #00f0ff;
+}
+
+/* === Neon Buttons === */
+button {
+  padding: 0.75rem 1.5rem;
+  background: transparent;
+  border: 2px solid #00ffe7;
+  color: #00ffe7;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #00ffe7, 0 0 20px #00ffe7;
+}
+
+button:hover {
+  background-color: #00ffe7;
+  color: #0f0f0f;
+  box-shadow: 0 0 20px #00ffe7, 0 0 30px #00ffe7;
+}
+
+/* === Neon Inputs === */
+input, textarea, select {
+  padding: 0.75rem;
+  border: 2px solid #00ffe7;
+  background-color: transparent;
+  color: #00ffe7;
+  font-size: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.25rem;
+  transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  box-shadow: 0 0 8px #00ffe7, 0 0 16px #00ffe7;
+}
+
+/* === Container === */
+.container {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.02);
+  box-shadow: 0 0 20px rgba(0, 255, 231, 0.1), 0 0 30px rgba(0, 255, 231, 0.05);
+}
+
+/* === Neon Table === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.05);
+  margin-top: 2rem;
+  border-radius: 12px;
+  overflow: hidden;
+  color: #00ffe7;
+  box-shadow: 0 0 15px rgba(0, 255, 231, 0.1);
+}
+
+th, td {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(0, 255, 231, 0.2);
+}
+
+th {
+  background-color: rgba(0, 255, 231, 0.1);
+  font-weight: bold;
+  text-shadow: 0 0 5px #00ffe7;
+}
+
+td a {
+  color: #00ffe7;
+}
+
+td a:hover {
+  text-shadow: 0 0 10px #00ffe7;
+}
+
+/* === Utility Classes === */
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.mt-2 { margin-top: 2rem; }
+.mb-2 { margin-bottom: 2rem; }
+.p-2 { padding: 2rem; }
+
+/* === Flex Utilities === */
+.flex {
+  display: flex;
+}
+.flex-column { flex-direction: column; }
+.flex-row { flex-direction: row; }
+.flex-wrap { flex-wrap: wrap; }
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+.flex-between {
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+
+  button {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
